@@ -1,3 +1,5 @@
+<script src="Javascript.js">
+</script>
 <style>
 .container2{
   position: absolute;
@@ -6,8 +8,18 @@
   width: 30%;
   font-size: 30px;
 }
+.nav{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 body{
   background-color: #e2e2e2;
+}
+.scramble{
+position: absolute;
+top: 200px;
+left: 50px;
 }
 
 </style>
@@ -15,11 +27,23 @@ body{
   <h1 align="center">
     Contact
   </h1>
+  <nav class="nav" align="right">
+  			<button><a href="index.html">Home</a></button>
+  		  <button><a href="about.html">About</a></button>
+  			<button><a href="contact.html">Contact</a></button>
+  </nav>
   <div align="center">
     <button><a href="about.html">About</a></button>
     <button><a href="index.html">Home</a></button>
 </div>
 
+
+<div align="center" class="scramble">
+  Word Scramble<br><br>
+<input type="text" id="name" style="width:400px; font-size:20px;">
+<br><br>
+<button onclick="doFunction();">Scramble!</button>
+</div>
 
 <div align="center" class="container2">
   <form id="contact" action="" method="post">
@@ -38,7 +62,6 @@ body{
 <br>
 <br>
       <button  name="submit" type="submit" id="contact-submit">Submit</button>
-
   </form>
 </div>
 
