@@ -3,34 +3,84 @@
 
 <head>
 <style>
-@font-face {
-  font-family: myFirstFont;
-  src: url("sansation_light.woff");
+body{
+  background-image: url(https://images4.alphacoders.com/195/thumb-1920-19528.jpg);
+  background-color: #cccccc;
 }
-div{font-family: mrFirstFont;
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+#title{
+  font-family: 'Indie Flower', cursive;
 }
-.images{
-    box-shadow: 10px 10px 5px #888888;
+.image1{
+position: absolute;
+top: 150px;
+left: 300px;
+  box-shadow: 10px 10px 5px #888888;
 }
-.images{
+.image2{
+position: absolute;
+top: 110px;
+left: 1100px;
+box-shadow: 10px 10px 5px #888888;
+}
+.image3{
 position: absolute;
 top: 300px;
+left: 1350px;
+box-shadow: 10px 10px 5px #888888;
+}
+
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 355px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.image3:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 </style>
 </head>
 <body>
-<div>
-  <h1>
+  <h1 align="center" id="title">
   Tyler Katona
 </h1>
-</div>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-
-<div class="images" style="background-color:powderblue;">
+<div align="center">
+<button><a href="about.html">About</a></button>
+<button><a href="contact.html">Contact</a></button>
+</div >
+<div class="image1">
 <img width="200px" src="https://cdn130.picsart.com/235679162062201.jpg?r1024x1024" alt="2 penguins">
+</div>
+<div class="image2">
 <img width="200px" src="https://cdn102.picsart.com/205143795000202.jpg?r1024x1024" alt="1 penguin">
-<img src="https://cdn104.picsart.com/209118703001201.jpg?r240x240" alt="swimming penguin">
+</div>
+<div class="image3">
+<img src="https://cdn104.picsart.com/209118703001201.jpg?r240x240" alt="swimming penguin" class="image">
+<div class="overlay">
+    <div align="center"class="text">OMG ITS SWIMMING</div>
+  </div>
 </div>
 
 </body>
